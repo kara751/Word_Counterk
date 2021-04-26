@@ -1,0 +1,434 @@
+{% load static %}
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Words Count</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,800&family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/78345209b6.js" crossorigin="anonymous"></script>
+    <style>
+        .btn{
+          margin: 0 auto;
+          display: block;
+          font-weight: bold;
+          font-size: 1.6rem;
+        }
+
+        html{
+         font-size: 62.5%;
+        }
+
+       body{
+            #background-color: #fefbd8;
+            background-image: url( "{% static '/comp.jpg' %}");
+            height: 50rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+       .di{
+            background: rgba(0, 0, 0, 0.6);
+            #background-color: black;
+            color:white;
+            height: 27rem;
+            width:30%;
+            #width: 50rem;
+            margin:auto;
+            #opacity: 0.5;
+          }
+       #wel{
+            background-color:#00BFFF;
+            color:black;
+            height: 26rem;
+            width:25%;
+            #width: 40rem;
+            font-size: 1.5rem;
+            font-family: 'Nunito', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+            padding:2rem;
+            display:none;
+        }
+      #con{
+         background-color: black;
+         color:white;
+         font-size: 2.5rem;
+         font-family: 'Nunito', sans-serif;
+         padding:.3rem;
+         text-align:center;
+         display:none;
+      }
+
+
+       h1{
+          #background-color:DodgerBlue;
+          #background-image: linear-gradient(to right top, #27788d, #009aa0, #00ba94, #31d769, #a8eb12);
+          #color:white;
+          font-size: 5vw;
+          #font-size: 350%;
+          font-weight: normal;
+          text-align:center;
+          font-family: "Sofia", sans-serif;
+          #font-family: Copperplate, Papyrus, fantasy;
+          background: #1abc9c;
+          color: black;
+       }
+       .success{
+        color:#32CD32;
+       }
+       .report{
+        color:red;
+       }
+       .a{
+         color:blue;
+         border: 1.7rem solid purple;
+         resize:none;
+       }
+       .welcome{
+         font-size: 2.0rem;
+         font-family: 'Nunito', sans-serif;
+         font-family: 'Roboto Mono', monospace;
+       }
+       #about {
+        top: 25rem;
+        background-color: #00BFFF;
+        color:black;
+}
+       #contact {
+        top: 30rem;
+        background-color: black;
+}
+       .sidenav a {
+        position: absolute;
+        left: -9rem;
+        transition: 0.3s;
+        padding: 1.3rem;
+        width: 14rem;
+        text-decoration: none;
+        font-size: 2.0rem;
+        color: white;
+        border-radius: 0 5px 5px 0;
+}
+        #mySidenav a:hover {
+         left: 0;
+
+}
+        .ic{
+          font-size:27px;
+          }
+
+        a:hover + #wel {
+           display: block;
+        }
+        #myButton{
+        background-color:red;
+         color:white;
+        }
+        #myButton:hover {
+         background-color:black;
+        }
+        .link{
+         color:red;
+        }
+       @media (min-width:320px){
+        .sidenav a {
+          padding: 1.1rem;
+          width: 10.5rem;
+          font-size: 1.5rem;
+          }
+        #myButton{
+         font-size: 1.2rem;
+         width:12rem;
+        }
+        .ic{
+         font-size:20px;
+        }
+        .di{
+            height: 27rem;
+            width:50%;
+            position:absolute;
+            right:0;
+        }
+        .report{
+         font-size:2rem;
+        }
+        .success{
+         font-size:2rem;
+        }
+        .y{
+         font-size:2rem;
+        }
+        #wel{
+         width:52%;
+         height:290px;
+         position: absolute;
+         left:0;
+         top:339px;
+        }
+        .wel{
+         font-size:1.2rem;
+        }
+        .contact{
+         position: absolute;
+         top:600px;
+         width:100%;
+        }
+        .welcome{
+          font-size:1.5rem;
+        }
+       }
+       @media (min-width:480px){
+         .sidenav a {
+           padding: 1.1rem;
+           width: 10.8rem;
+           font-size: 1.5rem;
+          }
+         #myButton{
+         font-size: 1.4rem;
+         width:14rem;
+        }
+        .ic{
+         font-size:25px;
+        }
+        .di{
+            height: 27rem;
+            width:40%;
+            position:absolute;
+            right:50px;
+        }
+        .report{
+         font-size:2rem;
+        }
+        .success{
+         font-size:2rem;
+        }
+        .y{
+         font-size:2rem;
+        }
+        #wel{
+         width:40%;
+         height:290px;
+         position: absolute;
+         left:0;
+         top:345px;
+        }
+        .wel{
+         font-size:1.2rem;
+        }
+        .contact{
+         position: absolute;
+         top:600px;
+         width:100%;
+        }
+        .welcome{
+          font-size:1.5rem;
+        }
+
+       }
+       @media (min-width:600px){
+        .sidenav a {
+           padding: 1.1rem;
+           width: 10.9rem;
+           font-size: 1.5rem;
+          }
+         #myButton{
+         font-size: 1.4rem;
+         width:15rem;
+        }
+        .ic{
+         font-size:27px;
+        }
+        .di{
+            height: 24rem;
+            width:35%;
+            position:absolute;
+            right:100px;
+        }
+        .report{
+         font-size:2rem;
+        }
+        .success{
+         font-size:2rem;
+        }
+        .y{
+         font-size:2rem;
+        }
+        #wel{
+         width:35%;
+         height:275px;
+         position: absolute;
+         left:0;
+         top:345px;
+        }
+        .wel{
+         font-size:1.2rem;
+        }
+        .contact{
+         position: absolute;
+         top:600px;
+         width:100%;
+        }
+        .welcome{
+          font-size:1.5rem;
+        }
+       }
+       @media (min-width:801px){
+         .sidenav a {
+           padding: 1.3rem;
+           width: 14rem;
+           font-size: 2rem;
+          }
+         #myButton{
+         font-size: 1.7rem;
+         width:15rem;
+        }
+        .ic{
+         font-size:28px;
+        }
+        .di{
+            height: 24rem;
+            width:30%;
+            position:absolute;
+            right:200px;
+        }
+        .report{
+         font-size:2.2rem;
+        }
+        .success{
+         font-size:2.2rem;
+        }
+        .y{
+         font-size:2.2rem;
+        }
+        #wel{
+         height: 29rem;
+         width:25%;
+         position: absolute;
+         left:0;
+         top:345px;
+        }
+        .wel{
+         font-size:1.3rem;
+        }
+        .contact{
+         position: absolute;
+         top:600px;
+         width:100%;
+        }
+        .welcome{
+          font-size:1.5rem;
+        }
+
+       }
+      @media (min-width:1025px){
+           .sidenav a {
+           padding: 1.3rem;
+           width: 14rem;
+           font-size: 2rem;
+          }
+         #myButton{
+         font-size: 1.8rem;
+         width:17rem;
+        }
+        .ic{
+         font-size:27px;
+        }
+        .di{
+            height: 24rem;
+            width:25%;
+            position:absolute;
+            right:550px;
+        }
+        .report{
+         font-size:2.4rem;
+        }
+        .success{
+         font-size:2.4rem;
+        }
+        .y{
+         font-size:2.4rem;
+        }
+        #wel{
+         height: 31rem;
+         width:25%;
+         position: absolute;
+         left:0;
+         top:365px;
+        }
+        .wel{
+         font-size:1.5rem;
+        }
+        .contact{
+         position: absolute;
+         top:670px;
+         width:100%;
+        }
+        .welcome{
+          font-size:1.7rem;
+        }
+       }
+       @media (min-width:1281px){}
+
+
+    </style>
+</head>
+<body id="body">
+<b><h1 class="font-effect-shadow-multiple">WORD COUNTER</h1></b>
+<br><br>
+<div class="container">
+  <form action="/home/" method="post" id="myForm">{% csrf_token %}
+    <div class="form-group">
+      <textarea name="text" class="form-control a" rows="5" id="comment" onkeyup="box();" required placeholder="Enter the text here..."></textarea><br>
+        <button id="myButton"  class="btn btn-success" href="/"><i class="fas fa-hand-point-right ic"style="color:white"></i> Get Result </button>
+    </div>
+  </form>
+    <br><br>
+</div>
+<div id="mySidenav" class="sidenav">
+    <a href="#" id="about" class="about">About  &nbsp;&nbsp;<i class="fas fa-angle-double-right" style="font-size:22px;color:white"></i></a>
+    <a href="#" id="contact" class="c">Contact <i class="fas fa-angle-double-right" style="font-size:22px;color:white"></i></a>
+</div>
+<div class="di" id="dii">
+ <h2 id="h22" style="text-align:center ;" ><br><strong class="report">{{ word }}<br><br></strong><strong class="success">{{ status }}<br><br></strong><strong class="y"> {{ words }} </strong><strong class="y"> {{ ac }}<br> <strong class="y"> {{ character }} </strong></strong><strong class="y">{{ abc }} </strong></h2>
+</div>
+ <div id="wel" class="si"><p class="wel"><strong class="welcome">Welcome to this 'Word Counter Site'!</strong><br><br>
+    Simply type or paste your text in the text area above <br>
+    to get the word and character count of your text <br>
+    and submit it by clicking on the 'Get Result' button.<br>
+        Enjoy!. :)</p>
+ </div>
+    <footer class="contact" id="con">
+    <strong>Contact Us:-</strong>
+  <a href="{% url 'contact' %}" class="link">click</a>
+</footer>
+
+</body>
+<script>
+$(function (){
+
+$('.about').click(function (){
+
+$('.si').show();
+
+$('.contact').hide();
+
+});
+
+$('.c').click(function (){
+
+$('.si').hide();
+
+$('.contact').show();
+
+});
+});
+</script>
+</html>
+
