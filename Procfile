@@ -1,1 +1,0 @@
-web: gunicorn count.wsgi --log-file -
