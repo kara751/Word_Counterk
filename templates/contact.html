@@ -49,25 +49,11 @@ background-image: linear-gradient(#D38312,#A83279);
  height:150px;
  background:orange;
 }
-.footer {
-         background-color: black;
-         color:white;
-         font-size: 2.5rem;
-         font-family: 'Nunito', sans-serif;
-         padding:.3rem;
-         text-align:center;
-         position:absolute;
-         width:100%;
-         bottom:0;
-}
 .hom{
  background:black;
  color:white;
  font-size:20px;
  padding:7px;
-}
-.hom:hover{
-
 }
 .snd{
  height:46px;
@@ -96,8 +82,7 @@ a:hover, a:active {
  background:#2196F3;
 }
 @media only screen and (max-width: 479px){
-    .container { width: 90%;position:absolute;top:160px;left:90px; height:450px;}
-    .footer {position:absolute;bottom:0;}
+    .container { width: 90%;position:absolute;top:160px;left:70px; height:450px;}
     .heade{ width:100%;
             height:100px;}
     h1{
@@ -108,7 +93,6 @@ a:hover, a:active {
 }
 @media only screen and (max-width: 600px){
     .container { width: 70%;}
-    .footer {position:absolute;bottom:0;}
     .heade{ width:100%;
             height:130px;}
      h1{
@@ -139,10 +123,6 @@ a:hover, a:active {
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{% url 'index' %}"style=" text-decoration: none;">Home <i class="fas fa-home" style="font-size:25px; color:red";></i></a>
   </form>
 </div>
-
-  <footer class="footer">
-    <small>&copy; 2021 wordcounterk</small>
-</footer>
 {% if messages %}
         {% for message in messages %}
          {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
