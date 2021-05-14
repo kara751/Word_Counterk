@@ -1,3 +1,3 @@
 # Word Counter
-
-This is a simple python django word counter project.
+## Introduction
+This is a simple python django word counter project.You simply put your paragraphs or words onto the text area and then they will count the number of words and characters in your text.
