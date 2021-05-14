@@ -7,3 +7,5 @@ For counting the number of words and characters by inserting a text in a text ar
 1. Assuming the repository is on Windows
 2. Clone the github repository
 ```https://github.com/kara751/word-counterk.git``` 
+3.Install python 3.9 and required python 3.9 packages:
+```pip install -r requirements.txt```
