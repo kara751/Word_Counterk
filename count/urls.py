@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path,include
 from pafy.g import urls
 
-admin.site.site_header = "KARAN Admin"
+admin.site.site_header = "Admin"
 admin.site.site_title = "KARAN Admin Portal"
 admin.site.index_title = "Welcome to KARAN site"
 
